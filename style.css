@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsla(217, 22%, 67%, 0.7);
+  font-family: "Karla", sans-serif;
+  /* width: 1440px; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+.card {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: span 2/1;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+}
+.card-top {
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+.card-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card-ft-left {
+  background-color: hsl(179, 62%, 43%);
+  background-blend-mode: darken;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+.card-ft-left button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  width: 80%;
+  padding: 15px;
+  color: hsl(204, 43%, 93%);
+}
+.card-ft-left button span {
+  font-size: 1.2rem;
+  letter-spacing: 1;
+}
+.card-ft-right ul {
+  list-style: none;
+}
+.card-ft-left h3 {
+  color: hsl(204, 43%, 93%);
+}
+.card-ft-left .sub-price {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  display: inline-block;
+}
+.card-ft-left .full-access-price {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: hsl(204, 43%, 93%);
+}
+.card-top h2 {
+  color: hsl(179, 62%, 43%);
+}
+.card-top h3 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+.card-top p {
+  color: hsla(217, 22%, 67%, 0.7);
+  letter-spacing: 1px;
+  padding-right: 40px;
+  line-height: 1.5;
+}
+.card-ft-right h3 {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 20px;
+}
+.card-ft-right ul li {
+  padding-bottom: 4px;
+  color: hsl(204, 43%, 93%);
+  font-weight: lighter;
+}
+.card-ft-right {
+  background-color: hsla(179, 62%, 43%, 0.745);
+  background-blend-mode: soft-light;
+  padding: 40px;
+}
