@@ -40,19 +40,20 @@ body {
   background-blend-mode: darken;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-start;
   padding: 40px;
 }
 .card-ft-left button {
   background-color: hsl(71, 73%, 54%);
   border: none;
-  width: 80%;
+  width: 90%;
   padding: 15px;
   color: hsl(204, 43%, 93%);
-}
-.card-ft-left button span {
-  font-size: 1.2rem;
-  letter-spacing: 1;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #ffff;
+  font-weight: 700;
 }
 .card-ft-right ul {
   list-style: none;
@@ -71,6 +72,7 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
   color: hsl(204, 43%, 93%);
+  opacity: 0.9;
 }
 .card-top h2 {
   color: hsl(179, 62%, 43%);
@@ -81,7 +83,6 @@ body {
 }
 .card-top p {
   color: hsla(217, 22%, 67%, 0.7);
-  letter-spacing: 1px;
   padding-right: 40px;
   line-height: 1.5;
 }
@@ -92,10 +93,41 @@ body {
 .card-ft-right ul li {
   padding-bottom: 4px;
   color: hsl(204, 43%, 93%);
-  font-weight: lighter;
+  opacity: 0.7;
 }
 .card-ft-right {
   background-color: hsla(179, 62%, 43%, 0.745);
   background-blend-mode: soft-light;
   padding: 40px;
+}
+.card-ft-left .sub-price {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: center;
+}
+.card-ft-left span {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+  padding-left: 10px;
+  opacity: 0.6;
+  font-weight: normal;
+}
+@media only screen and (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card-top .full-access-price {
+    margin-top: 0px;
+    font-size: 0.7rem;
+  }
+  .card-top {
+    flex-basis: auto;
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+  }
 }
